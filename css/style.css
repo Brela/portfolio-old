@@ -5,6 +5,8 @@ html {
 
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     color: rgb(112, 101, 101);
@@ -218,12 +220,10 @@ main section.twoDivs {
 }
 
 .websites {
-    background: linear-gradient(310deg, rgb(177, 194, 181), rgb(49, 48, 48));
+    /* background: linear-gradient(310deg, rgb(177, 194, 181), rgb(49, 48, 48)); */
 }
 
-.websites * {
-    color: white;
-}
+
 
 .twoDivs * {
 
@@ -236,18 +236,16 @@ main section.twoDivs {
 
 div.applications {
     /* background: url(../img/house.jpg) 0 0 no-repeat, grey; */
-    background: linear-gradient(40deg, rgb(194, 182, 167), rgb(49, 48, 48));
+    /* background: linear-gradient(40deg, rgb(194, 182, 167), rgb(49, 48, 48)); */
     background-size: 150%;
 }
 
-div.applications * {
-    color: rgb(236, 235, 235);
-}
+
 
 .cardButtons {
     margin: auto 0%;
-    border-top: 1.5px solid rgb(236, 236, 236);
-    border-bottom: 1.5px solid rgb(236, 236, 236);
+    border-top: 2px solid rgb(236, 236, 236);
+    border-bottom: 2px solid rgb(236, 236, 236);
     height: auto;
     font-size: 2em;
     /* justify-content: center;
@@ -265,11 +263,6 @@ div.applications * {
     transition-duration: .2s, 1s;
     transition-timing-function: ease-in;
     transition-delay: 0s, 1s;
-}
-
-.cardButtons:hover {
-    background: #b0ebe6a8;
-    /* border-radius: 95%; */
 }
 
 /* ============================= 4 site gifs ========================================= */
@@ -291,9 +284,13 @@ div.applications * {
     transition-delay: 0s, 1s;
 }
 
-img[src*=".gif"]:hover {
+.gifContainer div img {
+    width: 400px;
+}
+
+.gifContainer div img:hover {
     transition: .5s;
-    width: 77%;
+    width: 410px;
     box-shadow: 1px 5px 5px rgb(255, 255, 255);
 
 }
