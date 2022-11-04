@@ -37,7 +37,7 @@ html {
 
 /*------------------------------------------BASE STYLES----------------------------------*/
 h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     padding: 0 20%30px 20%;
 
@@ -337,24 +337,37 @@ h2 {
     padding: 0%;
 }
 
-.processNav {
-    font-size: 15em;
-    flex-basis: 20vw;
-
+.slide-left-container, .slide-right-container {
+    display: flex;
+    font-size: 10em;
+    flex-basis: 32.5vw;
+    justify-content: center;
 }
 
-.process-down {
-    rotate: 180deg;
+.slide-left {
+    position: relative;
+    top: 100px;
+    left: 7vw;
+    rotate: 270deg;
+    color: rgba(112, 101, 101, 0.7);
+}
+
+.slide-right {
+    position: relative;
+    top: 100px;
+    right: 7vw;
+    rotate: 90deg;
+    color: rgba(112, 101, 101, 0.7);
 }
 
 .proposalPicsContainer {
-
+    display: flex;
+    flex-direction: row;
     flex-basis: 35vw;
-    margin: auto 20vw;
     max-height: 80vh;
     background-color: beige;
     height: auto;
-    overflow-y: scroll;
+    overflow-x: scroll;
     border: 1px solid black;
 }
 
@@ -364,8 +377,34 @@ h2 {
 }
 
 /*------------------------------------------ORDER WEBSITE----------------------------------*/
+
+.order-website {
+    visibility: visible;
+}
+
+.order-website {
+    visibility: visible;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+.order-website input {
+    visibility: visible;
+}
+
 /*------------------------------------------ABOUT ME----------------------------------*/
+.aboutMe img {
+    width: 200px;
+}
+
 /*------------------------------------------MORE SERVICES----------------------------------*/
+.more h4 {
+    font-size: 3em;
+    margin-top: 30px;
+    color: rgb(28, 100, 100);
+}
 
 
 /*------------------------------------------FOOTER----------------------------------*/
@@ -474,5 +513,5 @@ footer {
     justify-content: flex-start;
   } */
 
-    input#boxCheck:checked~ {}
+
 }
