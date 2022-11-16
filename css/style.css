@@ -47,6 +47,9 @@ body {
     background: rgb(255, 255, 255);
 }
 
+h3 {
+    font-size: 1.5em;
+}
 
 .hidden {
     visibility: hidden;
@@ -381,12 +384,33 @@ h2 {
 
 /*------------------------------------------ORDER WEBSITE----------------------------------*/
 
+.order-website form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-website h2 {
+    margin-bottom: 30px;
+
+}
+
+.send {
+    width: 80px;
+}
 
 h5 {
     font-size: 1.5em;
 }
 
+textarea::selection {
 
+    background: rgb(210, 235, 198);
+
+}
 
 /*------------------------------------------ABOUT ME----------------------------------*/
 .aboutMe~* {
