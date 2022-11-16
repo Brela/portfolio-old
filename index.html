@@ -135,29 +135,26 @@
 			<div class="order-website" id="orderWebsite">
 				<h2>ORDER WEBSITE</h2>
 				<p class="line"></p>
-				<form action="https://api.web3forms.com/submit" method="POST">
+				<h2>Send e-mail to claybreland1@gmail.com:</h2>
 
-					<input type="hidden" name="access_key" value="4a631e6d-7220-4f93-b58b-7855c96e2a28">
 
-					<h5>Subject</h5>
-					<input type="text" name="subject" value="Contact from Portfolio">
-
-					<input type="hidden" name="redirect" value="https://web3forms.com/success">
-
-					<input type="hidden" name="email" required value="claybreland1@gmail.com">
-					<h5>Your Name</h5>
-					<input type="text" name="First Name" required>
-					<h5>Your Phone #</h5>
-					<input type="text" name="Phone Number" required>
-					<h5>Message</h5>
-					<textarea name="message" required></textarea>
+				<form action="mailto:claybreland1@gmail.com" method="post" enctype="text/plain">
+					Name:<br>
+					<input type="text" name="name"><br>
+					E-mail:<br>
+					<input type="text" name="mail"><br>
+					Comment:<br>
+					<input type="text" name="comment" size="50"><br><br>
+					<input type="submit" value="Send">
+					<input type="reset" value="Reset">
 
 					<! -- Step 1: Add this line -->
-						<div class="h-captcha" data-captcha="true"></div>
+						<!-- 		<div class="h-captcha" data-captcha="true"></div>
 
-						<button type="submit">Submit Form</button>
+								<button type="submit">Send</button> -->
 
 				</form>
+
 
 
 			</div>
