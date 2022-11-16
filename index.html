@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- code for the message app below -->
-<script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=t3H4wZRk"></script>
 
 <head>
 	<meta charset="utf-8">
@@ -141,40 +139,10 @@
 
 					<input type="hidden" name="access_key" value="4a631e6d-7220-4f93-b58b-7855c96e2a28">
 
-					<!-- Optional: Subject an be prefilled using type="hidden"
-       or type="text" for normal user submitted input -->
 					<h5>Subject</h5>
 					<input type="text" name="subject" value="Contact from Portfolio">
-					<!-- Optional: From Name you want to see in the email
-       Default is "Notifications". you can overwrite here -->
 
-
-
-
-					<!-- Optional: Default replyto will be "email" (if available)
-       you may overwrite replyto with different email here -->
-					<!-- 	<h5>test</h5>
-					<input type="text" name="replyto" value="customer@example.com"> -->
-
-					<!-- Required: If submitting form without Javascript.
-       Default web3forms output is in JSON format. -->
-					<!-- Not Required: If javascript, use "window.location.hash" instead -->
 					<input type="hidden" name="redirect" value="https://web3forms.com/success">
-
-					<!-- Optional: But Recommended: To Prevent SPAM Submission.
-       Make sure its hidden by default -->
-					<!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
-
-					<!-- Webhooks: Send your form data to Notion, Google Sheets or Zapier.
-       This feature available to PRO & Starter Plan users only -->
-					<!-- <input type="hidden" name="webhook" value="WEBHOOK_URL_HERE" /> -->
-
-					<!-- Google reCaptcha v3: To Prevent SPAM Submission.
-       This feature available to PRO & Starter Plan users only -->
-					<!-- <input type="hidden" name="recaptcha_response" id="recaptchaResponse"> -->
-
-					<!-- vtext.com	vzwpix.com -->
-					<!-- Custom Form Data: Form data you wish to receive in email. -->
 
 					<input type="hidden" name="email" required value="claybreland1@gmail.com">
 					<h5>Your Name</h5>
@@ -184,9 +152,14 @@
 					<h5>Message</h5>
 					<textarea name="message" required></textarea>
 
-					<button type="submit">Submit Form</button>
+					<! -- Step 1: Add this line -->
+						<div class="h-captcha" data-captcha="true"></div>
+
+						<button type="submit">Submit Form</button>
 
 				</form>
+
+
 			</div>
 			<div class="aboutMe" id="aboutMe">
 				<h2>ABOUT ME</h2>
@@ -230,6 +203,8 @@
 				<div><a href="https://twitter.com/ClayBreland"><i class="fa-brands fa-square-twitter"></i></a></div>
 			</section>
 		</footer>
+		<script src="https://web3forms.com/client/script.js" async defer></script> // hCaptcha service
+		<script src="js/hCaptcha.js"></script>
 		<script src="https://kit.fontawesome.com/aff5f1d5dc.js" crossorigin="anonymous"></script>
 		<!-- <script type="text/javascript" src="js/main.js"></script> -->
 	</form>
