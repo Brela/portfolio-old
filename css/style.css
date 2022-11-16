@@ -68,6 +68,11 @@ body {
     display: none;
 }
 
+/* hide checkbox */
+input#boxCheck {
+    display: none;
+}
+
 header, ul, li, a {
     display: flex;
     align-items: center;
