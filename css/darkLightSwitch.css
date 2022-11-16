@@ -27,11 +27,9 @@
 
 }
 
-form, .toggle:before, .toggle:after {
-    /* background: hsl(0, 0%, 90%); */
-}
 
-form, .toggle {
+
+form.darkLight, .toggle {
     position: relative;
 }
 

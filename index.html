@@ -62,7 +62,7 @@
 		</nav>
 
 	</header>
-	<form>
+	<form class="darkLight">
 		<nav><a href="#desktopNav"><i class="fa-solid fa-circle-chevron-up to-top"></i></a></nav>
 		<main>
 			<div class="socialH1Layout">
@@ -137,54 +137,73 @@
 				<p class="line"></p>
 				<h2>Send e-mail to claybreland1@gmail.com:</h2>
 
+				<form action="mailto:claybreland1@gmail.com" method="get" enctype="text/plain">
+					<div>
+						<label for="name">Name:
+							<input type="text" name="name" id="name" />
+						</label>
+					</div>
+					<div>
+						<label for="email">Email:
+							<input type="text" name="email" id="email" />
+						</label>
+					</div>
+					<div>
+						<label>Comments:</label>
+						<br />
+						<textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+					</div>
+					<div>
+						<input type="submit" name="submit" value="Send" />
+						<input type="reset" name="reset" value="Clear Form" />
+					</div>
+				</form>
 
-				<form action="mailto:claybreland1@gmail.com" method="post" enctype="text/plain">
-					Name:<br>
-					<input type="text" name="name"><br>
-					E-mail:<br>
-					<input type="text" name="mail"><br>
-					Comment:<br>
-					<input type="text" name="comment" size="50"><br><br>
-					<input type="submit" value="Send">
-					<input type="reset" value="Reset">
+			</div>
 
-					<! -- Step 1: Add this line -->
-						<!-- 		<div class="h-captcha" data-captcha="true"></div>
+			<! -- Step 1: Add this line -->
+				<!-- 		<div class="h-captcha" data-captcha="true"></div>
 
 								<button type="submit">Send</button> -->
 
-				</form>
 
 
 
-			</div>
-			<div class="aboutMe" id="aboutMe">
-				<h2>ABOUT ME</h2>
-				<p class="line"></p>
-				<img src="img/mePic.png">
-				<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo architecto, minima
-					hic facilis atque nam, explicabo quidem voluptatum excepturi mollitia ex iste minus ratione quia
-					laudantium. Aspernatur, omnis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Sint, ea delectus accusantium totam quaerat iste ex quisquam officia a deserunt voluptatibus
-					perferendis aliquid qui quae vero fugiat autem? Et molestiae iusto quisquam non doloremque, culpa
-					quia nisi rerum eius quis reiciendis in iure facere illum voluptate libero a, fuga enim beatae
-					impedit fugiat obcaecati dicta. Maiores, corporis libero facilis facere minus, officiis rerum sunt
-					veritatis atque laboriosam ipsum expedita eaque. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Quis cum nesciunt voluptatum molestias eligendi nobis? Eveniet quibusdam quaerat porro sint in
-					impedit nihil laborum enim accusamus sunt illum dolorum animi, quia aut neque. Et assumenda
-					explicabo repellat similique vitae quaerat aut, dicta molestiae. Est voluptas eum pariatur optio
-					saepe, itaque unde voluptatibus voluptatum aspernatur officiis maxime eaque laborum! Praesentium
-					laboriosam tenetur fugiat molestias voluptates, sint eum fugit tempore reiciendis temporibus autem
-					magni delectus nisi cum laudantium corrupti quaerat quasi harum?</p>
-			</div>
-			<div class="more" id="more">
-				<h2>MORE SERVICES</h2>
-				<p class="line"></p>
-				<h4>Google Ads</h4>
-				<h4>Logo Creation</h4>
-				<h4>Menu Design</h4>
-				<h4>Poster Design</h4>
-			</div>
+
+				</div>
+				<div class="aboutMe" id="aboutMe">
+					<h2>ABOUT ME</h2>
+					<p class="line"></p>
+					<img src="img/mePic.png">
+					<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo architecto,
+						minima
+						hic facilis atque nam, explicabo quidem voluptatum excepturi mollitia ex iste minus ratione quia
+						laudantium. Aspernatur, omnis deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Sint, ea delectus accusantium totam quaerat iste ex quisquam officia a deserunt voluptatibus
+						perferendis aliquid qui quae vero fugiat autem? Et molestiae iusto quisquam non doloremque,
+						culpa
+						quia nisi rerum eius quis reiciendis in iure facere illum voluptate libero a, fuga enim beatae
+						impedit fugiat obcaecati dicta. Maiores, corporis libero facilis facere minus, officiis rerum
+						sunt
+						veritatis atque laboriosam ipsum expedita eaque. Lorem ipsum dolor sit amet consectetur
+						adipisicing
+						elit. Quis cum nesciunt voluptatum molestias eligendi nobis? Eveniet quibusdam quaerat porro
+						sint in
+						impedit nihil laborum enim accusamus sunt illum dolorum animi, quia aut neque. Et assumenda
+						explicabo repellat similique vitae quaerat aut, dicta molestiae. Est voluptas eum pariatur optio
+						saepe, itaque unde voluptatibus voluptatum aspernatur officiis maxime eaque laborum! Praesentium
+						laboriosam tenetur fugiat molestias voluptates, sint eum fugit tempore reiciendis temporibus
+						autem
+						magni delectus nisi cum laudantium corrupti quaerat quasi harum?</p>
+				</div>
+				<div class="more" id="more">
+					<h2>MORE SERVICES</h2>
+					<p class="line"></p>
+					<h4>Google Ads</h4>
+					<h4>Logo Creation</h4>
+					<h4>Menu Design</h4>
+					<h4>Poster Design</h4>
+				</div>
 		</section>
 
 
