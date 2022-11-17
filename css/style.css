@@ -39,8 +39,7 @@ html {
 h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    padding: 0 20%30px 20%;
-
+    padding: 30px 20% 20px 20%;
 }
 
 body {
@@ -48,7 +47,7 @@ body {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .hidden {
@@ -225,7 +224,7 @@ main section.twoDivs {
 .websites, .applications {
     flex-basis: 50%;
     /*padding for cards*/
-    padding: 40px 20px 50px 20px;
+    /* padding: 40px 20px 50px 20px; */
     max-width: 100vw;
 }
 
@@ -233,18 +232,10 @@ main section.twoDivs {
 
 .twoDivs * {
 
-    font-size: 1.6em;
-    /* background-color: rgba(45, 58, 54, 0.49); */
+    font-size: 2.5rem;
 }
 
-/* div.websites {
-    background: url(../img/template1.png);} */
 
-div.applications {
-    /* background: url(../img/house.jpg) 0 0 no-repeat, grey; */
-    /* background: linear-gradient(40deg, rgb(194, 182, 167), rgb(49, 48, 48)); */
-    background-size: 150%;
-}
 
 
 
@@ -259,6 +250,7 @@ div.applications {
     align-items: center; */
     /* space between buttons on cards and h4 */
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 /* -----------------------------BUTTONS---------------------------------- */
@@ -291,12 +283,12 @@ div.applications {
 }
 
 .gifContainer div img {
-    width: 400px;
+    width: 80%;
 }
 
 .gifContainer div img:hover {
     transition: .5s;
-    width: 410px;
+    width: 84%;
     box-shadow: 1px 5px 5px rgb(255, 255, 255);
 
 }
@@ -313,7 +305,7 @@ main+section>div {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    align-items: center;
+
     flex-direction: column;
     flex-basis: 100%;
     margin-top: 40px;
@@ -321,11 +313,16 @@ main+section>div {
     min-height: 100VH;
 }
 
+.more {
+    min-height: 80vh;
+}
+
 h2 {
     font-size: 3.5rem;
     font-weight: 600;
     /* line-height: 3rem; */
     text-align: center;
+    margin-top: 20px;
 }
 
 .line {
@@ -412,27 +409,31 @@ textarea::selection {
 
 }
 
-/*------------------------------------------ABOUT ME----------------------------------*/
-.aboutMe~* {
-    text-align: start;
-    align-items: flex-end;
-    margin: 0%;
-}
-
-.aboutMe img {
-
-    display: block;
-    margin: 0;
-    width: 10vw;
-    float: right;
-}
-
-.aboutMe .text {
-    margin: 0;
-    display: block;
-    width: 50vw;
+img[src*='eagle1'] {
+    width: 23vw;
     float: left;
-    font-size: 3em;
+    margin: 10px 20px 0 0;
+}
+
+
+
+/*------------------------------------------ABOUT ME----------------------------------*/
+
+.containAbout {
+    width: 80vw;
+}
+
+.containAbout div {
+    margin-top: 35px;
+    font-size: 2.5em;
+    line-height: 2;
+}
+
+.mePic {
+    display: block;
+
+    width: 20vw;
+    float: right;
 }
 
 /*------------------------------------------MORE SERVICES----------------------------------*/
@@ -467,6 +468,17 @@ footer {
         height: auto;
     }
 
+    h2 {
+        font-size: 4.2rem;
+        font-weight: 600;
+        /* line-height: 3rem; */
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
     header {
         height: 0;
     }
@@ -493,7 +505,7 @@ footer {
         color: rgb(132, 139, 132);
         background: rgba(167, 167, 89, 0);
         font-style: none;
-        font-size: 5rem;
+        font-size: 7rem;
         position: fixed;
         top: 3vh;
         right: 3vw;
@@ -508,7 +520,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        gap: 10px;
+        gap: 12px;
         box-sizing: border-box;
         position: fixed;
         top: 0vh;
@@ -518,7 +530,7 @@ footer {
         border-top: 1px solid rgb(65, 63, 63);
         text-decoration: none;
 
-        font-size: .5em;
+        font-size: 10rem;
         background-color: rgba(7, 11, 22, 0.863);
         z-index: 5;
         padding: 3px 10px;
@@ -545,9 +557,83 @@ footer {
         flex-basis: 70%;
     }
 
-    /* input:checked~header :first-child {
-    justify-content: flex-start;
-  } */
+    /* proposal ---------------------------------------*/
+    .slide-left-container, .slide-right-container {
+        display: flex;
+        font-size: 10em;
+        flex-basis: 10vw;
+        justify-content: center;
+    }
+
+    .slide-left {
+        position: relative;
+        top: 100px;
+        left: 7vw;
+        rotate: 270deg;
+        color: rgba(112, 101, 101, 0.7);
+    }
+
+    .slide-right {
+        position: relative;
+        top: 100px;
+        right: 7vw;
+        rotate: 90deg;
+        color: rgba(112, 101, 101, 0.7);
+    }
+
+    .proposalPicsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 80vw;
+        max-height: 80vh;
+        background-color: beige;
+        height: auto;
+        overflow-x: scroll;
+        border: 1px solid black;
+        margin-top: 20px;
+    }
+
+    .to-top {
+        font-size: 6em;
+        color: rgba(18, 18, 52, 0.494);
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+    }
 
 
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 600;
+        padding: 30px 20% 20px 20%;
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+
+    .twoDivs * {
+        font-size: 5rem;
+    }
+
+    .websites {
+        margin-top: 40px;
+    }
+
+    .cardButtons {
+        margin: auto 0%;
+        border-bottom: 2px solid rgb(236, 236, 236);
+        height: 80px;
+        padding: 20px auto;
+        font-size: 7rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .more {
+        min-height: 50vh;
+    }
 }
