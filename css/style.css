@@ -42,10 +42,10 @@ h1 {
     margin-top: 30px;
 }
 
-h1+h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin-bottom: 40px;
+h1+p {
+    font-size: 2rem;
+    font-weight: 350;
+    margin: 20px 0 40px 0;
 }
 
 body {
@@ -212,7 +212,7 @@ main section.twoDivs {
     /* flex-basis: 100%; */
     /* flex-direction: column; */
     gap: 2vw;
-    height: auto;
+
 }
 
 .websites, .applications {
@@ -267,34 +267,55 @@ main section.twoDivs {
 }
 
 .gifContainer div {
-    padding-top: 30px;
-    height: 400px;
-    position: relative;
+    padding-top: 15px;
+    height: auto;
+    /* position: relative;
     border-radius: 2px transition-property;
-    /* background: border-radius; */
     transition-duration: .2s, 1s;
-    transition-timing-function: ease-in;
-    transition-delay: 0s, 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s, 1s; */
+
 }
 
 .gifContainer div img {
     width: 80%;
 }
 
-.gifContainer div img:hover {
+.gifContainer p {
+    font-size: 2rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.gifContainer a {
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+.gifContainer p a {
+    color: rgb(60, 128, 18);
+}
+
+.gifContainer p a:hover {
+    color: rgb(177, 218, 179);
+}
+
+
+/* .gifContainer div img:hover {
     transition: .5s;
     width: 84%;
-    box-shadow: 1px 5px 5px rgb(255, 255, 255);
+    box-shadow: 1px 5px 5px rgb(166, 171, 163);
 
-}
+} */
 
 
 /* ========section after main (the process, order website, about me) ============ */
-main+section {
+/* main+section {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-}
+} */
 
 main+section>div {
     display: flex;
@@ -306,6 +327,7 @@ main+section>div {
     margin-top: 40px;
     padding-top: 30px;
     min-height: 100VH;
+    height: auto;
 }
 
 .more {
@@ -483,19 +505,23 @@ footer {
     main section.twoDivs {
         justify-content: space-evenly;
         flex-wrap: wrap;
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
         flex-direction: column;
-        margin: 50px 5% auto 5%;
+        margin: 50px 5% 100px 5%;
         gap: 3vw;
         height: auto;
     }
 
+    .application {
+        height: auto;
+    }
+
     .gifContainer div {
-        height: 600px;
+        height: auto;
     }
 
     .gifContainer div img {
-        width: 95%;
+        width: 100%;
     }
 
     .gifContainer div img:hover {
@@ -683,7 +709,7 @@ footer {
     }
 
     .websites {
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     .cardButtons {
