@@ -499,7 +499,11 @@ footer {
 /*-----------------------------------------QUERIES-------------------------------*/
 @media screen and (max-width: 1350px) {
 
-
+    h1+p {
+        font-size: 3.5rem;
+        font-weight: 350;
+        margin: 20px 0 40px 0;
+    }
 
     /*this is for stacking the cards in main for tablet to phone*/
     main section.twoDivs {
@@ -522,6 +526,14 @@ footer {
 
     .gifContainer div img {
         width: 100%;
+    }
+
+    .gifContainer p {
+        font-size: 3.5rem;
+    }
+
+    .gifContainer a {
+        padding-top: 30px;
     }
 
     .gifContainer div img:hover {
