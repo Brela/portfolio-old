@@ -274,7 +274,6 @@ main section.twoDivs {
     transition-duration: .2s, 1s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s, 1s; */
-
 }
 
 .gifContainer div img {
@@ -285,7 +284,8 @@ main section.twoDivs {
     font-size: 2rem;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+
 }
 
 .gifContainer a {
@@ -718,6 +718,12 @@ footer {
 
     .twoDivs * {
         font-size: 5rem;
+    }
+
+    .twoDivs .gifContainer {
+        border-bottom: solid rgb(25, 128, 64) 2px;
+        margin-bottom: 10px;
+
     }
 
     .websites {
