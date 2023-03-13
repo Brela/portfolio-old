@@ -149,7 +149,7 @@
 			<p class="line"></p>
 			<h2>Contact Me</h2>
 
-			<form action="https://formsubmit.co/18efbbfa0bb8f3ee0d4a1436f4c6478c " method="POST">
+			<!-- 			<form action="https://formsubmit.co/18efbbfa0bb8f3ee0d4a1436f4c6478c" method="POST">
 				<div>
 					<h3>Your Name:</h3>
 					<input type="text" name="name" required>
@@ -166,7 +166,27 @@
 				<button class="send" type="submit">Send</button>
 
 				<input type="hidden" name="_next" value="https://brela-portfolio.netlify.app/thanks">
+			</form> -->
+			<form class="contact-form" name="contact" action="/success" method="POST" netlify data-netlify="true">
+				<div>
+					<label for="name">Your Name:</label>
+					<input type="text" name="name" id="name" class="send" placeholder="Enter your name" required>
+				</div>
+				<div>
+					<label for="email">Your Email:</label>
+					<input type="email" name="email" id="email" class="send" placeholder="Enter your email" required>
+				</div>
+				<div>
+					<label for="message">Message:</label>
+					<textarea name="message" id="message" class="" rows="5" cols="35"></textarea>
+				</div>
+				<div>
+					<button type="submit" class="send">Send</button>
+					<input type="hidden" name="_subject" value="New submission!">
+					<input type="hidden" name="_next" value="https://brela-portfolio.netlify.app/thanks">
+				</div>
 			</form>
+
 
 		</div>
 
