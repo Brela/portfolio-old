@@ -23,6 +23,7 @@ $(document).ready(function () {
     const buttonRight = document.querySelector('.slide-right');
     const buttonLeft = document.querySelector('.slide-left');
     let width = document.querySelector('.proposalPicsContainer img').offsetWidth
+    console.log(width)
 
     buttonRight.onclick = function () {
         container.scrollLeft += width;
@@ -30,54 +31,6 @@ $(document).ready(function () {
     buttonLeft.onclick = function () {
         container.scrollLeft -= width;
     };
-
-    /*
-        const imgs = document.querySelector('.proposalPicsContainer')
-       
-        const img = document.querySelectorAll('.imgs img')
-    
-        let idx = 0
-        let interval = setInterval(run, 2000);
-    
-        function run() {
-            idx++
-            changeImage()
-        }
-    
-        function changeImage() {
-            if (idx > img.length - 1) {
-                idx = 0
-            } else if (idx < 0) {
-                idx = img.length - 1
-            }
-    
-            imgs.style.transform = `translateX(${-idx * 500}px)`
-        }
-    
-        function resetInterval() {
-            clearInterval(interval)
-            interval = setInterval(run, 2000)
-        }
-    
-         rightBtn.addEventListener('click', () => {
-            idx++
-            changeImage()
-            resetInterval()
-        })
-    
-        leftBtn.addEventListener('click', () => {
-            idx--
-            changeImage()
-            resetInterval()
-        })
-     */
-
-
-
-
-
-
-
 
 
 
