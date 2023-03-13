@@ -404,6 +404,10 @@ h2 {
     margin-top: 5px;
 }
 
+.order-website input {
+    color: black;
+}
+
 textarea {
     font-size: 2rem;
     padding: 10px;
@@ -423,7 +427,6 @@ h5 {
 }
 
 textarea::selection {
-
     background: rgb(210, 235, 198);
 
 }
