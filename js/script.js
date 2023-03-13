@@ -22,7 +22,9 @@ $(document).ready(function () {
     const container = document.querySelector('.proposalPicsContainer')
     const buttonRight = document.querySelector('.slide-right');
     const buttonLeft = document.querySelector('.slide-left');
-    let width = document.querySelector('.proposalPicsContainer img').offsetWidth
+    // let width = document.querySelector('.proposalPicsContainer img').offsetWidth
+    let width = container.scrollWidth / container.children.length;
+
     console.log(width)
 
     buttonRight.onclick = function () {
