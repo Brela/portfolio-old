@@ -2,15 +2,15 @@
 :root {
     --background-1: rgb(69, 75, 80);
     --background-2: rgb(15, 32, 41);
-    --grey: grey;
+    --grey: rgba(245, 245, 245, 0.5);
 
     --accent-1: rgb(255, 255, 255);
-    --accent-2: rgb(143, 211, 65);
-    --accent-3: rgb(81, 163, 60);
+    --accent-2: rgb(149, 223, 45);
+    --accent-3: rgb(161, 239, 51);
+    --accent-4: rgb(250, 250, 244);
 
     --box-shadow-color: white;
     --font-color-1: white;
-    --font-color-2: rgb(227, 241, 94);
 }
 
 html {
@@ -39,13 +39,13 @@ html {
 h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .subtitle {
     font-size: 2.1rem;
     font-weight: 600;
-    margin: 20px 0 40px 0;
+    margin: 10px 0 50px 0;
     color: var(--accent-2);
 }
 
@@ -65,12 +65,11 @@ h3 {
 .to-top {
     font-size: 4em;
     color: rgba(245, 245, 245, 0.5);
-    color: var(--accent-2);
+    color: var(--grey);
     position: fixed;
     right: 15px;
     bottom: 20px;
 }
-
 
 
 /*------------------------------------------NAV AT TOP----------------------------------*/
@@ -113,7 +112,7 @@ nav li {
 
 nav li:hover {
     background: #93999969;
-    color: var(--accent-3);
+    color: var(--grey);
 }
 
 
@@ -144,21 +143,6 @@ header {
 
 }
 
-/* .breland {
-    margin-left: 5vw;
-    font-size: 2.9rem;
-    background-image: linear-gradient(80deg, rgb(51, 116, 60), #000000fa, rgb(51, 116, 60));
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
-/* .divBreland, #list a {
-    height: 80px;
-    -webkit-transform: perspective(800px) rotateX(10deg);
-} */
-
 
 /*------------------------------------------MAIN----------------------------------*/
 
@@ -180,11 +164,11 @@ h1 span {
 
 
 
-/* --------------------------------------WEBSITES & APPLICATIONS----------------------------------------- */
+/* --------------------------------------  Projects  ----------------------------------------- */
 
-#websitesContainer * {
+/* #websitesContainer * {
     font-size: 1.25em;
-}
+} */
 
 
 #websitesContainer {
@@ -207,12 +191,9 @@ h1 span {
 }
 
 
-
-
-
-
-/* ============================= 4 site gifs ========================================= */
+/* ============================= 4 containers ========================================= */
 .gifContainer {
+    position: relative;
     padding-top: 25px;
     display: flex;
     flex-direction: column;
@@ -235,7 +216,11 @@ h1 span {
     width: 70%;
 }
 
-.gifContainer p {
+img[src*="pixels"] {
+    margin: 3px auto 10px autp;
+}
+
+/* .gifContainer p {
     font-size: 2rem;
     width: 90%;
     margin-left: 5%;
@@ -243,28 +228,61 @@ h1 span {
     font-weight: 600;
     min-height: 6rem;
     height: auto;
+} */
+
+.gifContainer .title {
+    color: var(--accent-3);
+    font-size: 2rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    min-height: 4rem;
+    height: auto;
 }
 
-.gifContainer p.title {
-    color: var(--accent-2);
-}
-
-.gifContainer a {
-    font-size: 3srem;
+/* .gifContainer a {
+    font-size: 1rem;
     padding-top: 5px;
+}
+ */
+.gifContainer .link-to-project {
+    position: absolute;
+    bottom: 50px;
+    color: var(--accent-4);
+    font-size: 10px;
+    /* border: 1px solid white; */
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 10px white;
+    box-shadow: 1px 1px 10px var(--accent-3);
+    border-radius: 4px;
+}
+
+.gifContainer .link-to-project:hover {
+    background-color: rgb(89, 171, 38);
+    background-color: var(--accent-2);
+}
+
+
+.gifContainer h4 {
+    font-size: 1.8rem;
+    margin: 10px auto;
+    width: 70%;
+    line-height: 1.5em;
+    padding: auto 50%;
 }
 
 .gifContainer p a {
-    color: var(--font-color-1)
+
+    font-size: 1.5rem;
+    padding: 20px auto;
 }
 
-.gifContainer p a:hover {
-    color: rgb(177, 218, 179);
-}
 
-.gifcontainer .description {
-    margin-top: 70px;
-}
+
 
 /* .gifContainer div img:hover {
     transition: .5s;
@@ -331,7 +349,12 @@ h2 {
     top: 100px;
     left: 7vw;
     rotate: 270deg;
-    color: rgba(112, 101, 101, 0.7);
+    color: var(--grey);
+}
+
+.slide-left:hover, .slide-right:hover {
+    color: rgb(89, 171, 38);
+    color: var(--accent-2);
 }
 
 .slide-right {
@@ -339,7 +362,7 @@ h2 {
     top: 100px;
     right: 7vw;
     rotate: 90deg;
-    color: rgba(112, 101, 101, 0.7);
+    color: var(--grey);
 }
 
 .proposalPicsContainer {
@@ -465,7 +488,7 @@ img[src*='eagle1'] {
 }
 
 .statesContainer p {
-    font-size: .8em;
+    font-size: 1em;
 }
 
 /*------------------------------------------MORE SERVICES----------------------------------*/
@@ -497,7 +520,7 @@ section.socials {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 40px 38% 0 38%;
+    margin: 200px 38% 0 38%;
     height: 70px;
 }
 
@@ -530,6 +553,9 @@ section.socials {
 
 /*-----------------------------------------MOBILE----------------------------------*/
 /*-----------------------------------------QUERIES-------------------------------*/
+
+
+
 @media screen and (max-width: 1350px) {
 
     h1+p {
@@ -557,6 +583,10 @@ section.socials {
         height: auto;
     }
 
+    #websitesContainer * {
+        font-size: 2.5rem;
+    }
+
     #websitesContainer .gifContainer {
         /* border-bottom: solid rgb(255, 255, 255) 2px; */
         padding-bottom: 20px;
@@ -579,8 +609,30 @@ section.socials {
 
     }
 
+    .gifContainer h4 {
+        font-size: 5rem;
+        margin-bottom: 70px;
+
+    }
+
+    .gifContainer .link-to-project {
+        color: var(--accent-4);
+        font-size: 10px;
+        /* border: 1px solid white; */
+        width: 50%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gifContainer .link-to-project:hover {
+        background-color: var(--accent-2);
+    }
+
     .gifContainer a {
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     /*  .gifContainer div img:hover {
@@ -753,7 +805,7 @@ section.socials {
 
     .socials div i:hover {
         color: white;
-        font-size: auto;
+        font-size: 1.5em;
     }
 
 
@@ -773,8 +825,8 @@ section.socials {
         padding: 30px 20% 20px 20%;
     }
 
-    h2 {
-        margin-top: 50px;
+    .subtitle {
+        margin-top: 0px;
     }
 
     .to-top {
@@ -786,8 +838,23 @@ section.socials {
     }
 
 
-    #websitesContainer .gifContainer p {
-        height: 170px;
+
+    .gifContainer .link-to-project {
+        color: var(--accent-4);
+        font-size: 10px;
+        margin: auto 25%;
+        margin-bottom: 10px;
+        /* border: 1px solid white; */
+        width: 50%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gifContainer .link-to-project:hover {
+        background-color: transparent;
     }
 
     .websites {
