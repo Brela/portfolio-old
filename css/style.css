@@ -150,7 +150,7 @@ header {
 
 main {
     text-align: center;
-    padding: 20px 4vw 10px 4vw;
+    padding: 20px 4vw 80px 4vw;
 
 }
 
@@ -198,7 +198,7 @@ h1 span {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    min-height: 450px;
+    min-height: 480px;
     box-shadow: 1px 2px 10px white;
     box-shadow: 1px 1px 10px var(--box-shadow-color);
 }
@@ -209,6 +209,7 @@ h1 span {
 
 .gifContainer figure img {
     width: 70%;
+    height: 240px;
 }
 
 .gifContainer p {
@@ -216,9 +217,9 @@ h1 span {
     margin: auto 20px;
 }
 
-img[src*="pixels"] {
+/* img[src*="pixels"] {
     margin: 3px auto 10px auto;
-}
+} */
 
 .gifContainer h3.title {
     color: var(--accent-3);
@@ -232,7 +233,7 @@ img[src*="pixels"] {
 
 .gifContainer .link-to-project1 {
     position: absolute;
-    bottom: 50px;
+    bottom: 35px;
     color: var(--accent-4);
     font-size: 10px;
     width: 30%;
@@ -252,8 +253,8 @@ img[src*="pixels"] {
 
 .gifContainer .link-to-github {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 12px;
+    right: 12px;
     color: rgb(168, 168, 168);
     font-size: 3.5em;
     width: 25px;
@@ -632,9 +633,10 @@ section.socials {
         height: auto;
     }
 
-    .gifContainer div img {
+    .gifContainer figure img {
         margin-top: 22px;
         width: 85%;
+        height: auto;
     }
 
     .gifContainer p {
@@ -893,6 +895,12 @@ section.socials {
     .gifContainer .link-to-project1:hover {
         background-color: transparent;
     }
+
+    .gifContainer .link-to-github:hover {
+        background-color: transparent;
+    }
+
+
 
     .websites {
         margin-top: 10px;
