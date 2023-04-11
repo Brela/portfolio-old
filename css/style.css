@@ -1,6 +1,6 @@
 /* Box Model Hack */
 :root {
-    --background-1: rgb(119, 138, 127);
+    --background-1: rgb(114, 121, 117);
     --background-2: rgb(15, 32, 41);
     --grey: rgba(245, 245, 245, 0.5);
 
@@ -225,6 +225,7 @@ h1 span {
 .gifContainer h3.title {
     color: var(--accent-3);
     font-size: 2rem;
+    font-weight: 600;
     width: 90%;
     margin-left: 5%;
     margin-top: 10px;
