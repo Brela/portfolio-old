@@ -171,7 +171,6 @@ h1 span {
     font-size: 1.25em;
 } */
 
-
 #websitesContainer {
     display: flex;
     flex-direction: column;
@@ -180,64 +179,48 @@ h1 span {
     width: 91vw;
 }
 
-#websitesContainer .row {
+#websitesContainer article.row {
     display: flex;
     justify-content: space-evenly;
-    /* gap: 100px; */
 }
 
-
-#websitesContainer .row .gifContainer {
+#websitesContainer article.row .gifContainer {
     width: 35vw;
-}
 
+
+}
 
 /* ============================= 4 containers ========================================= */
 .gifContainer {
     position: relative;
     padding-top: 25px;
+    padding: auto 25px;
     padding-bottom: 100px;
-
     display: flex;
     flex-direction: column;
     min-height: 450px;
     box-shadow: 1px 2px 10px white;
-    box-shadow: 1px 1px 10px var(--box-shadow-color)
+    box-shadow: 1px 1px 10px var(--box-shadow-color);
 }
 
-.gifContainer div {
+.gifContainer figure {
     height: auto;
-    /* position: relative;
-    border-radius: 2px transition-property;
-    transition-duration: .2s, 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s, 1s; */
-
 }
 
-.gifContainer div img {
+.gifContainer figure img {
     width: 70%;
 }
 
 .gifContainer p {
-    font-size: 1.5em;
+    font-size: 1.7em;
+    margin: auto 20px;
 }
 
 img[src*="pixels"] {
-    margin: 3px auto 10px autp;
+    margin: 3px auto 10px auto;
 }
 
-/* .gifContainer p {
-    font-size: 2rem;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 10px;
-    font-weight: 600;
-    min-height: 6rem;
-    height: auto;
-} */
-
-.gifContainer .title {
+.gifContainer h3.title {
     color: var(--accent-3);
     font-size: 2rem;
     width: 90%;
@@ -247,17 +230,11 @@ img[src*="pixels"] {
     height: auto;
 }
 
-/* .gifContainer a {
-    font-size: 1rem;
-    padding-top: 5px;
-}
- */
 .gifContainer .link-to-project1 {
     position: absolute;
     bottom: 50px;
     color: var(--accent-4);
     font-size: 10px;
-    /* border: 1px solid white; */
     width: 30%;
     height: 30px;
     display: flex;
@@ -277,11 +254,10 @@ img[src*="pixels"] {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: var(--grey);
+    color: rgb(168, 168, 168);
     font-size: 3.5em;
-    /* border: 1px solid white; */
-    width: 5%;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,20 +271,19 @@ img[src*="pixels"] {
     background-color: var(--accent-2);
 }
 
-
 .gifContainer h4 {
     font-size: 1.8rem;
     margin: 10px auto;
     width: 70%;
-    line-height: 1.5em;
+    line-height: 1em;
     padding: auto 50%;
 }
 
 .gifContainer button a {
-
     font-size: 1.5rem;
     padding: 20px auto;
 }
+
 
 
 
