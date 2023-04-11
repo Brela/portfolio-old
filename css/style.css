@@ -273,7 +273,7 @@ img[src*="pixels"] {
 
 .gifContainer h4 {
     font-size: 1.8rem;
-    margin: 10px auto;
+    margin: 15px auto 10px auto;
     width: 70%;
     line-height: 1em;
     padding: auto 50%;
