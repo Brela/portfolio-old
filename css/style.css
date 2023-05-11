@@ -317,7 +317,7 @@ h2 {
 }
 
 .gifContainer .link-to-project1:hover {
-    background-color: var(--background-2);
+    background-color: grey;
     box-shadow: 1px 1px 10px var(--accent-3);
 }
 
