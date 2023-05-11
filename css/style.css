@@ -1,7 +1,7 @@
 /* Box Model Hack */
 :root {
     --background-1: rgb(114, 121, 117);
-    --background-2: rgb(15, 32, 41);
+    --background-2: rgb(30, 50, 60);
     --grey: rgba(245, 245, 245, 0.5);
 
     --accent-1: rgb(255, 255, 255);
@@ -432,10 +432,25 @@ img[alt="mongodb"] {
     width: 80vw;
 }
 
-.containAbout div {
+.containAbout p {
     margin-top: 35px;
     font-size: 1.8em;
     line-height: 2;
+}
+
+.containAbout p::selection {
+    background: black;
+    color: var(--accent-2);
+}
+
+.containAbout p::-moz-selection {
+    background: black;
+    color: var(--accent-2);
+}
+
+.containAbout p::-webkit-selection {
+    background: black;
+    color: var(--accent-2);
 }
 
 .mePic {
@@ -454,6 +469,7 @@ img[alt="mongodb"] {
 
 /* pics */
 .about-me-pics-container {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -485,7 +501,7 @@ section.socials {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 200px 38% 0 38%;
+    margin: 80px 38% 0 38%;
     height: 70px;
 }
 
@@ -514,15 +530,21 @@ section.socials {
     }
 }
 
-
+.email-container {
+    display: flex;
+    justify-content: center;
+}
 
 
 .email-p {
     display: flex;
-    width: 100%;
+    width: auto;
+    padding: 0 50px;
     justify-content: center;
     margin-top: 2%;
     font-size: 2em;
+    /* background: black; */
+    color: var(--accent-2);
 }
 
 
