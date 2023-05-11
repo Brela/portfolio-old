@@ -1,2 +1,2 @@
-#My Portfolio
-## Live Site: https://brela-portfolio.netlify.app/
+# My Portfolio
+## Live Site: https://claytonbreland.netlify.app/
