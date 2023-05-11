@@ -16,6 +16,10 @@
 
 html {
     font-size: 10px;
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Roboto Flex', sans-serif; */
+    font-family: 'Roboto Mono', monospace;
+
 }
 
 * {
@@ -37,6 +41,10 @@ html {
 
 
 /*------------------------------------------BASE STYLES----------------------------------*/
+.socialH1Layout {
+    margin-bottom: 50px;
+}
+
 h1 {
     font-size: 3.5rem;
     font-weight: 600;
@@ -46,7 +54,7 @@ h1 {
 .subtitle {
     font-size: 2.1rem;
     font-weight: 600;
-    margin: 10px 0 50px 0;
+    margin: 10px 0 0 0;
     color: var(--accent-2);
 }
 
@@ -158,6 +166,16 @@ h1 span {
     color: rgb(53, 60, 71);
 }
 
+h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* line-height: 3rem; */
+    text-align: center;
+    margin-top: 20px;
+    /* border-top: 1px solid pink; */
+}
+
+
 .here {
     padding-bottom: 30px;
 }
@@ -240,7 +258,7 @@ h1 span {
 
 .gifContainer p {
     font-size: 1.7em;
-    margin: auto 20px;
+    margin: auto 10%;
 }
 
 /* img[src*="pixels"] {
@@ -248,7 +266,7 @@ h1 span {
 } */
 
 .gifContainer h3.title {
-    color: var(--accent-3);
+    color: white;
     font-size: 2rem;
     font-weight: 600;
     width: 90%;
@@ -256,6 +274,10 @@ h1 span {
     margin-top: 10px;
     min-height: 4rem;
     height: auto;
+}
+
+.project-subtitle {
+    color: var(--accent-3);
 }
 
 .visit-buttons {
@@ -386,185 +408,6 @@ img[alt="mongodb"] {
 
 
 
-/* .gifContainer div img:hover {
-    transition: .5s;
-    width: 84%;
-    box-shadow: 1px 5px 5px rgb(166, 171, 163);
-
-} */
-
-
-/*------------------------------------------THE PROCESS----------------------------------*/
-main+section>div {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-
-    flex-direction: column;
-    flex-basis: 100%;
-    margin-top: 40px;
-    padding-top: 30px;
-    min-height: 100VH;
-    height: auto;
-}
-
-.more {
-    min-height: 80vh;
-}
-
-h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    /* line-height: 3rem; */
-    text-align: center;
-    margin-top: 20px;
-}
-
-.line {
-    margin: 10px auto 20px auto;
-    border-bottom: solid 1.5px black;
-    width: 15%;
-}
-
-.theProcess {
-    background: rgb(76, 86, 88);
-    background: var(--background-2);
-}
-
-.conatinerForNavAndProcessPages {
-    display: flex;
-    flex-direction: row;
-
-    margin: 0;
-    padding: 0%;
-}
-
-.slide-left-container, .slide-right-container {
-    display: flex;
-    font-size: 10em;
-    flex-basis: 32.5vw;
-    justify-content: center;
-}
-
-.slide-left {
-    position: relative;
-    top: 100px;
-    left: 7vw;
-    rotate: 270deg;
-    color: var(--grey);
-}
-
-.slide-left:hover, .slide-right:hover {
-    color: rgb(89, 171, 38);
-    color: var(--accent-2);
-}
-
-.slide-right {
-    position: relative;
-    top: 100px;
-    right: 7vw;
-    rotate: 90deg;
-    color: var(--grey);
-}
-
-.proposalPicsContainer {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 35vw;
-    max-height: 80vh;
-    background-color: beige;
-    height: auto;
-    overflow-x: scroll;
-    border: 1px solid black;
-}
-
-.proposalPicsContainer {
-    overflow-x: scroll;
-}
-
-.proposalPicsContainer::-webkit-scrollbar {
-    width: 13px;
-    /* Width of the entire scrollbar */
-}
-
-.proposalPicsContainer::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    /* Color of the track */
-}
-
-.proposalPicsContainer::-webkit-scrollbar-thumb {
-    background-color: var(--accent-3);
-    /* Color of the scroll thumb */
-    border-radius: 20px;
-    /* Rounded corners */
-    border: 3px solid rgb(176, 174, 174);
-}
-
-.proposalPicsContainer img {
-    width: 100%;
-
-}
-
-/*------------------------------------------ORDER WEBSITE----------------------------------*/
-
-.order-website form {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-}
-
-.order-website h2 {
-    margin-bottom: 30px;
-
-}
-
-.order-website input {
-    font-size: 2.5rem;
-    padding: 10px;
-    width: 20vw;
-    margin-top: 5px;
-}
-
-.order-website input {
-    background-color: var(--background-2);
-    color: white;
-    color: var(--accent-2);
-}
-
-textarea {
-    background-color: var(--background-2);
-    font-size: 2rem;
-    padding: 10px;
-    color: var(--accent-2);
-    width: 30vw;
-    margin-top: 5px;
-}
-
-.send {
-    width: 80px;
-    background-color: var(--background-2);
-    color: var(--accent-2);
-}
-
-h5 {
-    font-size: 1.5em;
-}
-
-textarea::selection {
-    background: transparent;
-
-}
-
-img[src*='eagle1'] {
-    width: 23vw;
-    float: left;
-    margin: 10px 20px 0 0;
-}
-
-
 
 /*------------------------------------------ABOUT ME----------------------------------*/
 .aboutMe {
@@ -591,7 +434,7 @@ img[src*='eagle1'] {
 
 .containAbout div {
     margin-top: 35px;
-    font-size: 2.5em;
+    font-size: 1.8em;
     line-height: 2;
 }
 
@@ -603,37 +446,23 @@ img[src*='eagle1'] {
 }
 
 
-/* .statesVisitedLink {
-    color: white;
-    color: var(--accent-2);
-    display: inline-block;
-    margin-left: 15px;
-    text-align: center;
-    width: 200px;
-    border-radius: 8px;
-    border: 2px solid var(--accent-2);
-    background-color: rgb(71, 71, 71);
-
-} */
 
 .statesPic {
     margin-top: 10px;
-    width: 20vw;
+    width: 40vw;
 }
 
+/* pics */
 .about-me-pics-container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/*------------------------------------------MORE SERVICES----------------------------------*/
-.more h4 {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 30px;
-    color: var(--accent-2)
+.about-me-pics-container img {
+    width: 30%;
 }
+
 
 
 /*------------------------------------------FOOTER----------------------------------*/
@@ -735,7 +564,7 @@ section.socials {
     }
 
     #websitesContainer * {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     #websitesContainer .gifContainer {
@@ -751,7 +580,7 @@ section.socials {
     }
 
     .gifContainer figure img {
-        margin-top: 22px;
+        margin: 3% 0;
         width: 85%;
         height: auto;
     }
@@ -766,15 +595,19 @@ section.socials {
         min-height: auto;
     }
 
-    .gifContainer h4 {
-        font-size: 5rem;
-        margin-bottom: 20px;
+    #websitesContainer .gifContainer h4 {
+        font-size: 4rem;
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        text-align: center;
+        align-self: center;
 
     }
 
     .gifContainer .link-to-project {
         color: var(--accent-4);
-        font-size: 2em;
+        /* font-size: 2em; */
         /* border: 1px solid white; */
         width: 50%;
         height: 40px;
@@ -816,7 +649,7 @@ section.socials {
 
     /* MOBILE DROPDOWN FOR hamNav */
 
-    #desktopNav {
+    /*   #desktopNav {
         display: none;
     }
 
@@ -831,7 +664,7 @@ section.socials {
 
     }
 
-    /* the label  - 3bars */
+ 
     .mobileNav {
         color: rgb(132, 139, 132);
         background: rgba(167, 167, 89, 0);
@@ -846,7 +679,7 @@ section.socials {
 
 
 
-    /*-----creates dropdown block---*/
+
     input#boxCheck:checked~#dropdownItems {
         display: flex;
         flex-direction: column;
@@ -880,7 +713,7 @@ section.socials {
 
     #dropdownItems li:hover {
         background-color: rgb(105, 111, 111);
-    }
+    } */
 
     .hidden {
         visibility: hidden;
@@ -888,76 +721,7 @@ section.socials {
         flex-basis: 70%;
     }
 
-    /* proposal ---------------------------------------*/
-    .slide-left-container, .slide-right-container {
-        display: flex;
-        font-size: 10em;
-        flex-basis: 10vw;
-        justify-content: center;
-    }
 
-    .slide-left {
-        position: relative;
-        top: 100px;
-        left: 7vw;
-        rotate: 270deg;
-        color: rgba(112, 101, 101, 0.7);
-    }
-
-    .slide-right {
-        position: relative;
-        top: 100px;
-        right: 7vw;
-        rotate: 90deg;
-        color: rgba(112, 101, 101, 0.7);
-    }
-
-    .proposalPicsContainer {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 80vw;
-        max-height: 80vh;
-        background-color: beige;
-        height: auto;
-        overflow-x: scroll;
-        border: 1px solid black;
-        margin-top: 20px;
-    }
-
-    .to-top {
-        font-size: 5em;
-        color: rgba(20, 168, 45, 0.637);
-        color: var(--accent-3);
-        position: fixed;
-        right: 25px;
-        bottom: 25px;
-    }
-
-    /* ---------- order website ----------------- */
-    .order-website input {
-        font-size: 2rem;
-        padding: 10px;
-        width: 50vw;
-        margin-top: 5px;
-    }
-
-    textarea {
-        font-size: 2rem;
-        padding: 10px;
-        color: rgb(52, 51, 51);
-        width: 80vw;
-        margin-top: 5px;
-    }
-
-    .send {
-        width: 20vw;
-        height: 35px;
-    }
-
-    /* ------------- about me ------------------ */
-    .containAbout div {
-        font-size: 3em;
-    }
 
     .statesPic {
         width: 30vw;
@@ -976,7 +740,7 @@ section.socials {
 
     .email-p {
         margin-top: 40px;
-        font-size: 5em;
+        font-size: 3em;
     }
 
 
@@ -1005,9 +769,9 @@ section.socials {
         font-size: 7em;
     }
 
-    #websitesContainer * {
+    /*   #websitesContainer * {
         font-size: 3.5rem;
-    }
+    } */
 
     #websitesContainer article.row {
         flex-direction: column;
@@ -1017,14 +781,14 @@ section.socials {
     }
 
     #websitesContainer article.row .gifContainer {
-        width: 70vw;
+        width: 85vw;
 
     }
 
 
     .gifContainer .link-to-project1 {
         color: var(--accent-4);
-        font-size: 10px;
+        /* font-size: 10px; */
         margin: auto 25%;
         margin-bottom: 10px;
         /* border: 1px solid white; */
@@ -1044,6 +808,10 @@ section.socials {
         background-color: transparent;
     }
 
+    .gifContainer .tech-icons img {
+        width: 50px;
+    }
+
     /* this will hide the word gitHub on movile for a smaller button */
 
     .visit-buttons {
@@ -1060,6 +828,8 @@ section.socials {
     .websites {
         margin-top: 10px;
     }
+
+
 
     .cardButtons {
         margin: auto 0%;
