@@ -212,6 +212,7 @@ h2 {
 .overlay-container {
     position: relative;
     display: inline-block;
+    border: 10px;
 }
 
 .overlay {
